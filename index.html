@@ -1,22 +1,65 @@
 <html>
 <head>
     <title>Checkout Kushki</title>
+    <style>
+        /* Add the CSS code here */
+        body {
+          background-image: url('pics/background.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        
+        .container {
+          width: 400px;
+          margin: 0 auto;
+          padding: 20px;
+          background-color: #f2f2f2;
+        }
+
+        .form-title {
+          font-size: 24px;
+          font-weight: bold;
+          margin-bottom: 20px;
+        }
+
+        input[type="text"] {
+          width: 100%;
+          padding: 8px;
+          margin-bottom: 10px;
+          border: 1px solid #cfd8f5;
+          border-radius: 4px;
+        }
+
+        button {
+          background-color: #4c66af;
+          color: #fff;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+
+        button:hover {
+          background-color: #45a049;
+        }
+    </style>
 </head>
 
 <body>
-<div class="container my-5">
-    <form id="payment-form">
-        <input placeholder="Card Number" type="text" name="number">
-        <input placeholder="Full Name" type="text" name="name">  
-        <input placeholder="MM" type="text" name="expiryMonth">
-        <input placeholder="YY" type="text" name="expiryYear">
-        <input placeholder="CVC" type="text" name="cvc">
-        <button id="submit">Pay $149900</button>
-    </form>
+    <div class="container my-5">
+        <h2 class="form-title">Inscribir Tarjeta</h2>
+        <form id="payment-form">
+            <input placeholder="Card Number" type="text" name="number">
+            <input placeholder="Full Name" type="text" name="name">  
+            <input placeholder="MM" type="text" name="expiryMonth">
+            <input placeholder="YY" type="text" name="expiryYear">
+            <input placeholder="CVC" type="text" name="cvc">
+            <input placeholder="Amount" type="text" name="valor">
+            <button id="submit">Token</button>
+        </form>
+    </div>
 
-
-</div>
-<script src="https://cdn.kushkipagos.com/kushki.min.js"></script>
-<script src="index.js"></script>
+    <script src="https://cdn.kushkipagos.com/kushki.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
